@@ -37,7 +37,7 @@ const Widget = ({ type }) => {
         icon: (
           <ShoppingCartOutlined
             className="icon"
-            style={{ color: "white", backgroundColor: "#e80909" }}
+            style={{ color: "black", backgroundColor: "#e80909" }}
           />
         ),
       };
@@ -50,7 +50,7 @@ const Widget = ({ type }) => {
         icon: (
           <AccountBalanceWalletOutlined
             className="icon"
-            style={{ color: "white", backgroundColor: "#ff9211" }}
+            style={{ color: "black", backgroundColor: "#ff9211" }}
           />
         ),
       };
@@ -63,7 +63,7 @@ const Widget = ({ type }) => {
         icon: (
           <MonetizationOnOutlined
             className="icon"
-            style={{ color: "white", backgroundColor: "aquamarine" }}
+            style={{ color: "black", backgroundColor: "aquamarine" }}
           />
         ),
       };

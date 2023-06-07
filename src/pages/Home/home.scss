@@ -4,10 +4,13 @@
         //background-color: lightblue;
         flex: 6;
         padding: 4px;
-        .widgets{
+        .widgets, .charts{
             display: flex;
             gap: 20px;
 
+        }
+        .charts{
+            padding: 5px 20px;
         }
     }
 }
