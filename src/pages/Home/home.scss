@@ -1,0 +1,13 @@
+.home{
+    display: flex;
+    .homecontainer{
+        //background-color: lightblue;
+        flex: 6;
+        padding: 4px;
+        .widgets{
+            display: flex;
+            gap: 20px;
+
+        }
+    }
+}
