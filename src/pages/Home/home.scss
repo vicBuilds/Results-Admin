@@ -7,10 +7,21 @@
         .widgets, .charts{
             display: flex;
             gap: 20px;
-
+            
+        }
+        .widgets{
+            padding: 20px;
         }
         .charts{
             padding: 5px 20px;
+        }
+        .listContainer{
+            box-shadow: 2px 4px 10px 1px rgba(207, 204, 204, 0.47);
+            padding: 20px;
+        }
+        .listTitle{
+            font-weight: 500;
+            margin-bottom: 15px;
         }
     }
 }
