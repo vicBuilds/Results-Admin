@@ -31,7 +31,24 @@
         .percentage{
             display: flex;
             align-items: center;
-            font-size: 14px;
+            font-size: 16px;
+            font-weight: bold;
+
+          &.positive{
+            color: green;
+          }
+          &.negative{
+            color: red;
+          }  
         }
+
+        .icon{
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 6px;
+            align-self: flex-end;
+        }
+
+
     }
 }

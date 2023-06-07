@@ -1,21 +1,92 @@
 import React from "react";
 import "./widget.scss";
-import { KeyboardArrowUp, PersonOutlineOutlined } from "@mui/icons-material";
+import {
+  KeyboardArrowUp,
+  PersonOutlineOutlined,
+  AccountBalanceWalletOutlined,
+  ShoppingCartOutlined,
+  MonetizationOnOutlined,
+} from "@mui/icons-material";
 
-const Widget = () => {
+// Example
+const amount = 200;
+const diff = 20;
+
+const Widget = ({ type }) => {
+  let data;
+
+  switch (type) {
+    case "user":
+      data = {
+        title: "USERS",
+        isMoney: false,
+        link: "See all Users",
+        icon: (
+          <PersonOutlineOutlined
+            className="icon"
+            style={{ color: "crimesome", backgroundColor: "orange" }}
+          />
+        ),
+      };
+      break;
+    case "order":
+      data = {
+        title: "ORDERS",
+        isMoney: false,
+        link: "See all Orders",
+        icon: (
+          <ShoppingCartOutlined
+            className="icon"
+            style={{ color: "white", backgroundColor: "#e80909" }}
+          />
+        ),
+      };
+      break;
+    case "earning":
+      data = {
+        title: "EARNINGS",
+        isMoney: true,
+        link: "See all Earnings",
+        icon: (
+          <AccountBalanceWalletOutlined
+            className="icon"
+            style={{ color: "white", backgroundColor: "#ff9211" }}
+          />
+        ),
+      };
+      break;
+    case "balance":
+      data = {
+        title: "BALANCE",
+        isMoney: true,
+        link: "See all balance",
+        icon: (
+          <MonetizationOnOutlined
+            className="icon"
+            style={{ color: "white", backgroundColor: "aquamarine" }}
+          />
+        ),
+      };
+      break;
+    default:
+      break;
+  }
+
   return (
     <div className="widget">
       <div className="left">
-        <div className="title">USERS</div>
-        <div className="counter">15354</div>
-        <div className="link">See all user</div>
+        <div className="title">{data.title}</div>
+        <div className="counter">
+          {data.isMoney && "$"} {amount}
+        </div>
+        <div className="link">{data.link}</div>
       </div>
       <div className="right">
-        <div className="percentage">
+        <div className="percentage positive">
           <KeyboardArrowUp />
-          20%
+          {diff}
         </div>
-        <PersonOutlineOutlined className="icon" />
+        {data.icon}
       </div>
     </div>
   );
