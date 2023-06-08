@@ -7,6 +7,7 @@ import ChildFriendlyIcon from "@mui/icons-material/ChildFriendly";
 import DeliveryDiningIcon from "@mui/icons-material/DeliveryDining";
 import ShowChartIcon from "@mui/icons-material/ShowChart";
 import NotificationAddIcon from "@mui/icons-material/NotificationAdd";
+import Image from "../../img/Data Vinci.png";
 
 const Sidebar = () => {
   return (
@@ -16,6 +17,9 @@ const Sidebar = () => {
       </div>
       <hr />
       <div className="center">
+        <div className="image-container">
+          <img src={Image} alt="Brand-Logo" />
+        </div>
         <ul>
           <p className="title">MAIN</p>
           <li>
@@ -50,6 +54,8 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
+
+      {/* Dummy */}
       <div className="bottom">
         <div className="colorOption"></div>
         <div className="colorOption"></div>

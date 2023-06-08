@@ -1,7 +1,10 @@
 .featured{
     flex: 3;
-    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+    box-shadow: 2px 4px 10px 1px rgba(87, 84, 84, 0.47);
     padding: 10px;
+    background-color: rgb(0, 0, 0);
+    background-color: linear-gradient(58deg, rgb(10, 2, 15) 0%, rgb(15, 43, 35) 50%, rgb(255, 253, 249) 100%);
+    color:white;
     .top{
         display: flex;
         justify-content: space-between;

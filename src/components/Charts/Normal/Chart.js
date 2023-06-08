@@ -1,14 +1,6 @@
 import React from "react";
 import "./chart.scss";
-import {
-  AreaChart,
-  Area,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
+import { AreaChart, Area, XAxis, Tooltip, ResponsiveContainer } from "recharts";
 
 const data = [
   { month: "January", "Total Sales": 5000 },

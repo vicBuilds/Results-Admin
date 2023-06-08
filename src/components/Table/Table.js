@@ -67,9 +67,8 @@ const Table1 = () => {
   const uniqueDates = [];
   const dateMap = {};
 
-  rows.map((row) => {
+  rows.forEach((row) => {
     const date = row.date;
-
     if (!dateMap[date]) {
       uniqueDates.push(date);
       dateMap[date] = true;
