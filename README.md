@@ -24,7 +24,7 @@ Table with Filter: A table component is integrated into the dashboard, allowing 
 ## Installation
 To run the interactive dashboard on your local machine, follow these steps:
 
-1. Clone the repository: git clone <repository_url>
+1. Clone the repository: git clone https://github.com/vicBuilds/Results-Admin.git
 
 2. Navigate to the project directory: cd panel-datavinci
 
